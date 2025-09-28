@@ -13,15 +13,9 @@ interface FooterProps {
   navLinks: LinkItem[];
   socialLinks: IconItem[];
   deliveryApps: IconItem[];
-  legalText: string;
 }
 
-const Footer = ({
-  navLinks,
-  socialLinks,
-  deliveryApps,
-  legalText,
-}: FooterProps) => {
+const Footer = ({ navLinks, socialLinks, deliveryApps }: FooterProps) => {
   return (
     <footer className="bg-[#E34524] text-white px-6 py-10 xl:px-52 xl:py-24">
       {/* Contenido principal */}
@@ -45,7 +39,10 @@ const Footer = ({
         </div>
 
         {/* Texto legal */}
-        <div className="text-sm md:text-right">{legalText}</div>
+        <div className="text-sm md:text-right">
+          Términos Y Condiciones 2025 Las Adoraditas Marca Registrada. Todos Los
+          Derechos Reservados
+        </div>
       </div>
 
       {/* Redes sociales y apps */}
