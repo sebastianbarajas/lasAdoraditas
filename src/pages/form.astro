@@ -1,0 +1,19 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import FormHub from "../components/FormHub.astro";
+import HubSpotForm from "@/components/HubSpotForm";
+
+
+---
+
+<Layout title="ELE & CE">
+	<main/>
+
+    <div class="bg-primary-black md:flex md:justify-center py-8 px-4">
+        <div class="md:w-72 bg-gray-200 p-8 rounded-md">
+            <HubSpotForm client:visible/>
+        </div>
+    </div>
+
+    
+</Layout>

@@ -1,0 +1,70 @@
+---
+
+import Menu from "@/components/Menu";
+import "../styles/global.css";
+import Footer from "@/components/Footer";
+import { useState } from "react";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+  const locations =[
+	{ whatsApp: "5219991234567", label: "Centro 1" },
+	{ whatsApp: "5219992664563", label: "Centro 2" },
+	{ whatsApp: "5219994740485", label: "Caucel" },
+  ];
+
+  export const navLinks = [
+  { label: "Aviso De Privacidad", url: "/privacidad" },
+  { label: "Preguntas Frecuentes", url: "/faq" },
+  { label: "Restaurantes", url: "/restaurantes" },
+  { label: "Contacto", url: "/contacto" },
+];
+
+export const socialLinks = [
+  { name: "X", url: "https://x.com", icon: "/logos/x.svg" },
+  { name: "Facebook", url: "https://facebook.com", icon: "/logos/facebook.svg" },
+  { name: "TikTok", url: "https://tiktok.com", icon: "/logos/tiktok.svg" },
+];
+
+export const deliveryApps = [
+  { name: "Rappi", url: "https://rappi.com", icon: "/logos/rappi.svg" },
+  { name: "Uber Eats", url: "https://ubereats.com", icon: "/logos/uber.svg" },
+  { name: "Didi Food", url: "https://didi.com", icon: "/logos/didi.svg" },
+];
+
+export const legalText =
+  "Términos Y Condiciones 2025 Las Adoraditas Marca Registrada. Todos Los Derechos Reservados";
+
+//   const [sucursalNumber, setSucursalNumber] = useState("");
+
+//   const onLocationChangeHandler = (value: string) => {
+//     setSucursalNumber(value);
+//   };
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/public/logoonly.svg" />
+	
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-primary-black">
+		<Menu logo={"/logo.svg"} locations={locations} client:load ></Menu>
+		<slot />
+		 <Footer
+			navLinks={navLinks}
+			socialLinks={socialLinks}
+			deliveryApps={deliveryApps}
+			legalText={legalText}
+      	/>
+	</body>
+</html>

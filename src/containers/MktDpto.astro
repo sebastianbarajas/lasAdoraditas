@@ -1,0 +1,63 @@
+---
+import ImgCard from "../components/ImgCard.astro";
+
+type TTeam = {
+    altImage: string
+    title: string
+    subtitle:string
+    description: string
+    imageSrc: string
+}
+
+const team : TTeam[]= [
+    {
+        altImage:"mkt",
+        title:"Corita",
+        subtitle:"Marketing especialist",
+        description:"",
+        imageSrc:"/public/users/corita.jpeg",
+    },
+    {
+        altImage:"mkt",
+        title:"Jess",
+        subtitle:"Content especialist",
+        description:"",
+        imageSrc:"/public/users/jess.jpeg",
+    },
+    {
+        altImage:"mkt",
+        title:"Sebastian",
+        subtitle:"Web developer",
+        description:"",
+        imageSrc:"/public/users/sebastian.jpeg",
+    },
+    {
+        altImage:"mkt",
+        title:"Luis",
+        subtitle:"Art & designer",
+        description:"",
+        imageSrc:"/public/users/luis.jpeg",
+    },
+    {
+        altImage:"mkt",
+        title:"Emiliano",
+        subtitle:"Media voice",
+        description:"",
+        imageSrc:"/public/users/emiliano.jpeg",
+    },
+]
+---
+
+<div class="bg-primary-black py-20 px-8 xl:px-32 grid grid-cols-10">
+    <>
+    {team.map(member => (
+        <ImgCard 
+            altImage={member.altImage}
+            title={member.title} 
+            subtitle={member.subtitle}
+            description={member.description}
+            imageSrc={member.imageSrc}
+        />
+    ))}
+    </>
+</div>

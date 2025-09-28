@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Carrousel from '../components/Carrousel.tsx';
+import HeaderMenuFood from '../components/HeaderMenuFood.tsx';
+import GalleryHome from '../components/GalleryHome.tsx';
+import Sucursales from '../components/Sucursales.tsx';
+
+const images = [
+	"/carrousel/promo1.jpg",
+	"/carrousel/promo2.jpg",
+	"/carrousel/promo3.jpg",
+
+];
+const imgGalleryHome = [
+	"/galleryHome/gallery1.jpg",
+	"/galleryHome/gallery2.jpg",
+	"/galleryHome/gallery3.jpg",
+	"/galleryHome/gallery4.jpg",
+	"/galleryHome/gallery5.jpg",
+	"/galleryHome/gallery6.jpg",
+];
+const itemsMenuFood = [
+	{
+      title: "Menú Adoraditas\nPide Aquí",
+      href: "/menu-adoraditas",
+      bgImage: "/menu_adoraditas.png",
+    },
+    {
+      title: "Menú Combos\nPide Aquí",
+      href: "/menu-combos",
+      bgImage: "/menu_combos.png",
+    },
+]
+const sucursales = [
+  {
+    id: 1,
+    title: "CENTRO 2",
+    address: "C. 56 x 63 y 61. Col. Centro",
+    phones: ["(999) 221 2705", "(999) 923 2282"],
+	schedule: [
+	 {days: "Lunes a Viernes", hours: "7:00 am - 9:00 pm"},
+	 {days: "Sábado", hours: "7:00 am - 8:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 5:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 2,
+    title: "CENTRO 2",
+    address: "C. 63 x 54 y 56. Col. Centro",
+    phones: ["(999) 156 2096", "(999) 923 3610"],
+	schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 5:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 3,
+    title: "CAUCEL",
+    address: "C. 62 x 37 y 39A. Fracc. La Herradura",
+    phones: ["(999) 419 1589", "(999) 492 9878"],
+	schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 4,
+    title: "FCO. DE MONTEJO",
+    address: "C. 44 x 51 y 53 Fracc. Fco. Montejo",
+    phones: ["(999) 492 9868", "(999) 195 0659"],
+	schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 5,
+    title: "LAS AMÉRICAS",
+    address: "C. 67A x 72 y 74 Fracc. Las Américas",
+    phones: ["(999) 492 9874", "(999) 941 0104"],
+   schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 6,
+    title: "FIESTA",
+    address: "C. 3 x D2 y esquina 6. Felipe Carrillo Puerto",
+    phones: ["(999) 492 9881", "(999) 688 9587"],
+   schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 7,
+    title: "MONTECRISTO",
+    address: "C. 22 x 3 y 7. San Antonio Cinta",
+    phones: ["(999) 114 0028", "(999) 948 6661"],
+   schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+  },
+  {
+    id: 8,
+    title: "CHOLUL",
+    address: "Km. 1.7 Cholul Motul Gasolinera Abimerhi",
+    phones: ["(999) 114 0028", "(999) 948 6661"],
+  	schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 4:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+    logo: "/logos/abimerhi.svg",
+  },
+  {
+    id: 9,
+    title: "PERIFÉRICO ORIENTE",
+    address: "C. 25 Col. Benito Juárez Oriente. Cruz anillo periférico",
+    phones: ["(999) 996 2779", "(999) 982 5127"],
+	schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 10:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 8:00 pm"},
+	],
+    mapUrl: "#",
+    logo: "/logos/lagas.svg",
+  },
+  {
+    id: 10,
+    title: "PERISUR",
+    address: "Perif. de Mérida Lic. Manuel Berzunza. Tablaje 18955",
+    phones: ["(999) 991 4362"],
+  schedule: [
+	 {days: "Lunes a Sábado", hours: "7:00 am - 5:00 pm"},
+	 {days: "Domingo", hours: "7:00 am - 3:00 pm"},
+	],
+    mapUrl: "#",
+    logo: "/logos/abimerhi.svg",
+  },
+];
+
+
+---
+
+<Layout title="Las Adoraditas">
+	<main>
+		<Carrousel client:load images={images}></Carrousel>
+		<HeaderMenuFood items={itemsMenuFood} />
+		<GalleryHome images={imgGalleryHome}></GalleryHome>
+		<Sucursales sucursales={sucursales} />
+	</main>
+</Layout>

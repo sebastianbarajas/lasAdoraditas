@@ -1,0 +1,82 @@
+import { useState } from "react";
+
+interface MenuProps {
+  logo: string; // URL o import del logo
+  locations: locations[]; // ej: { mx: "México", co: "Colombia" }
+  onLocationChange?: (value: string) => void;
+  sucursalNumber?: string;
+}
+
+interface locations {
+  whatsApp: string;
+  label: string;
+}
+const Menu = ({ logo, locations }: MenuProps) => {
+  const [sucursalNumber, setSucursalNumber] = useState("");
+
+  const onLocationChange = (value: string) => {
+    setSucursalNumber(value);
+  };
+  return (
+    <header className="w-full bg-yellow-400">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 py-6 gap-6">
+        {/* Logo */}
+        <a href="/" className="flex-shrink-0">
+          <img src={logo} alt="Logo" className="w-40 lg:w-56 mx-auto md:mx-0" />
+        </a>
+
+        {/* Texto central (solo en md o más grande) */}
+        <div className="hidden md:block text-black font-semibold">
+          NAVEGA POR EL MENÚ
+        </div>
+
+        {/* Bloque derecho */}
+        <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
+          {/* Título */}
+          <h2 className="font-extrabold text-black text-lg text-center md:text-left">
+            ENTREGA A DOMICILIO
+          </h2>
+
+          {/* Select con icono */}
+          <div className="flex items-center gap-2 w-full md:w-auto">
+            <div className="bg-red-600 p-3 rounded">
+              <img
+                src={"../../public/motoIcon.svg"}
+                alt="Moto"
+                className="w-8 h-8"
+              />
+            </div>
+            <select
+              onChange={(e) => onLocationChange?.(e.target.value)}
+              value={sucursalNumber}
+              className="flex-1 md:flex-none px-4 py-2 border border-black rounded text-gray-700 font-medium focus:outline-none focus:ring-2 focus:ring-red-500"
+            >
+              <option value="">Selecciona Sucursal</option>
+              {Object.entries(locations).map(([key, location]) => (
+                <option key={key} value={location.whatsApp}>
+                  {location.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Franja verde WhatsApp */}
+          <a
+            href={`https://wa.me/${sucursalNumber}?text=Hola,%20quiero%20hacer%20un%20pedido`}
+            target="_blank"
+            className="flex items-center justify-center gap-2 w-full md:w-auto bg-green-500 text-white px-4 py-2 rounded font-semibold hover:bg-green-600 transition"
+          >
+            <img
+              src={"../../public/whatsIcon.svg"}
+              alt="Moto"
+              className="w-8 h-8"
+            />
+            Elige, ordena y disfruta sin salir de casa
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Menu;
