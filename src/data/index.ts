@@ -149,7 +149,6 @@ export const adoraditas = [
     description: "Pastel pimiento, queso manchego y aderezo de la casa",
     price: "$27",
     image: "/adoraditas/clasica.png",
-    href: "#",
   },
   {
     id: 2,
@@ -157,7 +156,6 @@ export const adoraditas = [
     description: "Huevos revueltos con longaniza y frijol colado",
     price: "$34",
     image: "/adoraditas/huevo-longaniza.png",
-    href: "#",
   },
   {
     id: 3,
@@ -165,7 +163,6 @@ export const adoraditas = [
     description: "Pastel pimiento, queso daisy y aderezo de la casa",
     price: "$34",
     image: "/adoraditas/queso-daisy.png",
-    href: "#",
   },
   {
     id: 4,
@@ -173,7 +170,6 @@ export const adoraditas = [
     description: "Salami, queso manchego y aderezo italiano",
     price: "$34",
     image: "/adoraditas/pizza.png",
-    href: "#",
   },
   {
     id: 5,
@@ -182,7 +178,6 @@ export const adoraditas = [
       "Jamón pechuga de pavo, salami, queso manchego y aderezo italiano",
     price: "$48",
     image: "/adoraditas/italiana.png",
-    href: "#",
   },
   {
     id: 6,
@@ -191,7 +186,6 @@ export const adoraditas = [
       "Jamón pechuga de pavo, queso manchego o daisy, salami y aderezo de la casa",
     price: "$48",
     image: "/adoraditas/especial.png",
-    href: "#",
   },
   {
     id: 7,
@@ -200,7 +194,6 @@ export const adoraditas = [
       "Jamón pechuga de pavo, auténtico queso de bola y aderezo de la casa",
     price: "$55",
     image: "/adoraditas/queso-bola.png",
-    href: "#",
   },
   {
     id: 8,
@@ -209,7 +202,6 @@ export const adoraditas = [
       "Carne asada, aderezo de la casa, frijol, cebolla asada, pico de gallo y salsita roja",
     price: "$50",
     image: "/adoraditas/carne-asada.png",
-    href: "#",
   },
   {
     id: 9,
@@ -218,7 +210,6 @@ export const adoraditas = [
       "Pechuga de pollo empanizada, aderezo de la casa, frijol, pico de gallo y salsita roja",
     price: "$50",
     image: "/adoraditas/pechuga-empanizada.png",
-    href: "#",
   },
   {
     id: 10,
@@ -227,7 +218,6 @@ export const adoraditas = [
       "Pechuga de pollo empanizada rellena de jamón y queso philadelphia, aderezo de la casa y pico de gallo",
     price: "$64",
     image: "/adoraditas/parmesana.png",
-    href: "#",
   },
   {
     id: 11,
@@ -236,7 +226,6 @@ export const adoraditas = [
       "Pierna, jamón pechuga de pavo, queso daisy, aderezo de la casa, cebolla asada y tomate",
     price: "$99",
     image: "/adoraditas/pierna.png",
-    href: "#",
   },
   {
     id: 12,
@@ -245,7 +234,6 @@ export const adoraditas = [
       "Jamón pechuga de pavo, salami, pastel pimiento, asado o empanizado, queso manchego, aderezo de la casa, cebolla asada, pico de gallo, salsa roja y frijol colado",
     price: "$72",
     image: "/adoraditas/super-especial.png",
-    href: "#",
   },
   {
     id: 13,
@@ -254,7 +242,6 @@ export const adoraditas = [
       "Queso de bola, queso daisy, queso manchego y aderezo de la casa",
     price: "$55",
     image: "/adoraditas/tres-quesos.png",
-    href: "#",
   },
   {
     id: 14,
@@ -263,7 +250,6 @@ export const adoraditas = [
       "Pastel pimiento, queso manchego, aderezo de la casa y salchicha asadera",
     price: "$40",
     image: "/adoraditas/salchicha-asadera.png",
-    href: "#",
   },
   {
     id: 15,
@@ -272,14 +258,20 @@ export const adoraditas = [
       "Huevos revueltos con longaniza, frijol colado y extra queso de bola",
     price: "$??",
     image: "/adoraditas/huevo-longaniza-bola.png",
-    href: "#",
   },
 ];
 
 export const locations = [
-  { whatsApp: "5219991234567", label: "Centro 1" },
-  { whatsApp: "5219992664563", label: "Centro 2" },
-  { whatsApp: "5219994740485", label: "Caucel" },
+  { whatsApp: "5219992212705", label: "CENTRO 1" },
+  { whatsApp: "5219991562096", label: "CENTRO 2" },
+  { whatsApp: "5219994191589", label: "CAUCEL" },
+  { whatsApp: "5219994929868", label: "FCO. DE MONTEJO" },
+  { whatsApp: "5219994929874", label: "LAS AMÉRICAS" },
+  { whatsApp: "5219994929881", label: "FIESTA" },
+  { whatsApp: "5219991140028", label: "MONTECRISTO" },
+  { whatsApp: "5219991140028", label: "CHOLUL" },
+  { whatsApp: "5219999962779", label: "PERIFÉRICO ORIENTE" },
+  { whatsApp: "5219999914362", label: "PERISUR" },
 ];
 
 export const navLinks = [
@@ -303,4 +295,120 @@ export const deliveryApps = [
   { name: "Rappi", url: "https://rappi.com", icon: "/logos/rappi.svg" },
   { name: "Uber Eats", url: "https://ubereats.com", icon: "/logos/uber.svg" },
   { name: "Didi Food", url: "https://didi.com", icon: "/logos/didi.svg" },
+];
+
+export const combos = [
+  {
+    id: 1,
+    title: "COMBO LUNCH",
+    description: "Dos adoraditas clásicas + agua fresca",
+    price: "$74",
+    image: "/combos/lunch.png",
+  },
+  {
+    id: 2,
+    title: "COMBO LONGANIZA, PIZZA O DAISY",
+    description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
+    price: "$87",
+    image: "/combos/longaniza-pizza-daisy.png",
+  },
+  {
+    id: 3,
+    title: "COMBO 3 QUESOS O QUESO DE BOLA",
+    description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
+    price: "$126",
+    image: "/combos/3quesos-bola.png",
+  },
+  {
+    id: 4,
+    title: "COMBO ITALIANA O ESPECIAL",
+    description: "Dos adoraditas + agua fresca",
+    price: "$114",
+    image: "/combos/italiana-especial.png",
+  },
+  {
+    id: 5,
+    title: "COMBO ASADO Y EMPANIZADO",
+    description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
+    price: "$117",
+    image: "/combos/asado-empanizado.png",
+  },
+  {
+    id: 6,
+    title: "COMBO SÚPER",
+    description: "Dos adoraditas súper (asado o empanizado) + agua fresca",
+    price: "$159",
+    image: "/combos/super.png",
+  },
+  {
+    id: 7,
+    title: "COMBO PARMESANO",
+    description:
+      "Dos adoraditas de pechuga parmesana con philadelphia + agua fresca",
+    price: "$144",
+    image: "/combos/parmesano.png",
+  },
+  {
+    id: 8,
+    title: "COMBO ITALIANO O ESPECIAL COMPLETO",
+    description: "Agua + 1 galleta + papas",
+    price: "$105",
+    image: "/combos/italiano-especial-completo.png",
+  },
+  {
+    id: 9,
+    title: "COMBO PIERNA COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$156",
+    image: "/combos/pierna-completo.png",
+  },
+  {
+    id: 10,
+    title: "COMBO CLÁSICA COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$83",
+    image: "/combos/clasica-completo.png",
+  },
+  {
+    id: 11,
+    title: "COMBO ASADO O EMPANIZADO COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$107",
+    image: "/combos/asado-empanizado-completo.png",
+  },
+  {
+    id: 12,
+    title: "COMBO PIZZA/DAISY/HUEVO COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$91",
+    image: "/combos/pizza-daisy-huevo-completo.png",
+  },
+  {
+    id: 13,
+    title: "COMBO PARMIGIANA COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$121",
+    image: "/combos/parmigiana-completo.png",
+  },
+  {
+    id: 14,
+    title: "COMBO SÚPER COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$129",
+    image: "/combos/super-completo.png",
+  },
+  {
+    id: 15,
+    title: "COMBO QUESO BOLA/3 QUESOS COMPLETO",
+    description: "Agua + galletas + papas",
+    price: "$112",
+    image: "/combos/queso-bola-3quesos-completo.png",
+  },
+  {
+    id: 16,
+    title: "COMBO 2 PIERNA COMPLETO",
+    description: "2 adoraditas + agua fresca",
+    price: "$211",
+    image: "/combos/2pierna-completo.png",
+  },
 ];

@@ -1,10 +1,20 @@
-import { adoraditas, itemsMenuFood, locations } from "@/data";
+import { itemsMenuFood, locations } from "@/data";
 import HeaderMenuFood from "./HeaderMenuFood";
 import Menu from "./Menu";
 import MenuAdoraditasComponent from "./MenuAdoraditasComponent";
 import { useState } from "react";
 
-const MenuAdoraditasPage = () => {
+interface Sandwich {
+  id: number;
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+}
+interface Props {
+  itemsMenu: Sandwich[];
+}
+const MenuPage = (itemsMenu: Props) => {
   const [sucursalNumber, setSucursalNumber] = useState("");
 
   const onLocationChange = (value: string) => {
@@ -22,10 +32,10 @@ const MenuAdoraditasPage = () => {
       />
       <HeaderMenuFood items={itemsMenuFood} />
       <MenuAdoraditasComponent
-        items={adoraditas}
+        itemsMenu={itemsMenu.itemsMenu}
         sucursalNumber={sucursalNumber}
       />
     </main>
   );
 };
-export default MenuAdoraditasPage;
+export default MenuPage;
