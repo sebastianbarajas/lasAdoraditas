@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 interface CarouselProps {
-  images: string[];
+  images: string[]; // array de URLs o datos de imagen
   interval?: number; // ms entre slides
   aspectWidth?: number; // ancho original de la imagen (por defecto 1439)
   aspectHeight?: number; // alto original de la imagen (por defecto 420)

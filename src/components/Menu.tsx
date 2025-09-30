@@ -46,7 +46,7 @@ const Menu = ({
           <div className="flex items-center gap-2 w-full md:w-auto">
             <div className="bg-red-600 p-3 rounded">
               <img
-                src={"../../public/motoIcon.svg"}
+                src={`${import.meta.env.BASE_URL}motoIcon.svg`}
                 alt="Moto"
                 className="w-8 h-8"
               />
@@ -90,7 +90,11 @@ const Menu = ({
         : "bg-gray-300 text-gray-500 cursor-not-allowed"
     }`}
             >
-              <img src={"/whatsIcon.svg"} alt="whatsapp" className="w-8 h-8" />
+              <img
+                src={`${import.meta.env.BASE_URL}whatsIcon.svg`}
+                alt="whatsapp"
+                className="w-8 h-8"
+              />
               Elige, ordena y disfruta sin salir de casa
             </button>
           </button>

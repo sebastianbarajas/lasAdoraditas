@@ -4,25 +4,13 @@ import Carrousel from "../components/Carrousel.tsx";
 import HeaderMenuFood from "../components/HeaderMenuFood.tsx";
 import GalleryHome from "../components/GalleryHome.tsx";
 import Sucursales from "../components/Sucursales.tsx";
-import {
-  images,
-  imgGalleryHome,
-  itemsMenuFood,
-  locations,
-  sucursales,
-} from "../data";
-import Menu from "@/components/Menu";
+import { images, imgGalleryHome, itemsMenuFood, sucursales } from "../data";
+import MenuPageHome from "@/components/MenuPageHome.tsx";
 ---
 
 <Layout title="Las Adoraditas">
   <main>
-    <Menu
-      logo={"/logo.svg"}
-      locations={locations}
-      href="/menu-adoraditas"
-      menuSpan="NAVEGA POR EL MENÚ"
-      client:load
-    />
+    <MenuPageHome client:load />
     <Carrousel client:load images={images} />
     <HeaderMenuFood items={itemsMenuFood} />
     <GalleryHome images={imgGalleryHome} />

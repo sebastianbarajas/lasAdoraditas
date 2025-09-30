@@ -18,6 +18,7 @@ const MenuAdoraditasComponent = ({ itemsMenu, sucursalNumber }: Props) => {
     <div className="xl:py-32 xl:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white">
       {itemsMenu.map(({ id, title, description, price, image }) => (
         <CardMenu
+          key={id}
           id={id}
           title={title}
           description={description}

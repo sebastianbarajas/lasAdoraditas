@@ -3,6 +3,7 @@ import HeaderMenuFood from "./HeaderMenuFood";
 import Menu from "./Menu";
 import MenuAdoraditasComponent from "./MenuAdoraditasComponent";
 import { useState } from "react";
+import { getImageUrl } from "@/lib/utils";
 
 interface Sandwich {
   id: number;
@@ -23,9 +24,9 @@ const MenuPage = (itemsMenu: Props) => {
   return (
     <main>
       <Menu
-        logo={"/logo.svg"}
+        logo={getImageUrl("/logo.svg")}
         locations={locations}
-        href="/"
+        href={`${import.meta.env.BASE_URL}`}
         menuSpan="VOLVER AL INICIO"
         onLocationChange={onLocationChange}
         sucursalNumber={sucursalNumber}

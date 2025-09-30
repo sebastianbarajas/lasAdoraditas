@@ -1,3 +1,5 @@
+import { getImageUrl } from "@/lib/utils";
+
 interface item {
   id: number;
   title: string;
@@ -54,7 +56,7 @@ const CardMenu = ({
 
           {/* Icono WhatsApp */}
           <img
-            src={"/whatsIcon.svg"}
+            src={getImageUrl("whatsIcon.svg")}
             alt="whatsapp"
             className="w-7 h-7 mr-1 opacity-90"
           />

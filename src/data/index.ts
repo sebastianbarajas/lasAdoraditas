@@ -1,28 +1,31 @@
+import { getImageUrl } from "@/lib/utils";
+
+export const images = [
+  getImageUrl("carrousel/promo1.jpg"),
+  getImageUrl("carrousel/promo2.jpg"),
+  getImageUrl("carrousel/promo3.jpg"),
+];
+
 export const itemsMenuFood = [
   {
     title: "Menú Adoraditas\nPide Aquí",
-    href: "/menu-adoraditas",
-    bgImage: "/menu_adoraditas.png",
+    href: `${import.meta.env.BASE_URL}menu-adoraditas`,
+    bgImage: getImageUrl("/menu_adoraditas.png"),
   },
   {
     title: "Menú Combos\nPide Aquí",
-    href: "/menu-combos",
-    bgImage: "/menu_combos.png",
+    href: `${import.meta.env.BASE_URL}menu-combos`,
+    bgImage: getImageUrl("/menu_combos.png"),
   },
 ];
 
-export const images = [
-  "/carrousel/promo1.jpg",
-  "/carrousel/promo2.jpg",
-  "/carrousel/promo3.jpg",
-];
 export const imgGalleryHome = [
-  "/galleryHome/gallery1.jpg",
-  "/galleryHome/gallery2.jpg",
-  "/galleryHome/gallery3.jpg",
-  "/galleryHome/gallery4.jpg",
-  "/galleryHome/gallery5.jpg",
-  "/galleryHome/gallery6.jpg",
+  getImageUrl("/galleryHome/gallery1.jpg"),
+  getImageUrl("/galleryHome/gallery2.jpg"),
+  getImageUrl("/galleryHome/gallery3.jpg"),
+  getImageUrl("/galleryHome/gallery4.jpg"),
+  getImageUrl("/galleryHome/gallery5.jpg"),
+  getImageUrl("/galleryHome/gallery6.jpg"),
 ];
 
 export const sucursales = [
@@ -114,7 +117,7 @@ export const sucursales = [
       { days: "Domingo", hours: "7:00 am - 3:00 pm" },
     ],
     mapUrl: "#",
-    logo: "/logos/abimerhi.svg",
+    logo: getImageUrl("/logos/abimerhi.svg"),
   },
   {
     id: 9,
@@ -126,7 +129,7 @@ export const sucursales = [
       { days: "Domingo", hours: "7:00 am - 8:00 pm" },
     ],
     mapUrl: "#",
-    logo: "/logos/lagas.svg",
+    logo: getImageUrl("/logos/lagas.svg"),
   },
   {
     id: 10,
@@ -138,7 +141,7 @@ export const sucursales = [
       { days: "Domingo", hours: "7:00 am - 3:00 pm" },
     ],
     mapUrl: "#",
-    logo: "/logos/abimerhi.svg",
+    logo: getImageUrl("/logos/abimerhi.svg"),
   },
 ];
 
@@ -148,28 +151,28 @@ export const adoraditas = [
     title: "CLÁSICA",
     description: "Pastel pimiento, queso manchego y aderezo de la casa",
     price: "$27",
-    image: "/adoraditas/clasica.png",
+    image: getImageUrl("/adoraditas/clasica.png"),
   },
   {
     id: 2,
     title: "HUEVO CON LONGANIZA",
     description: "Huevos revueltos con longaniza y frijol colado",
     price: "$34",
-    image: "/adoraditas/huevo-longaniza.png",
+    image: getImageUrl("/adoraditas/huevo-longaniza.png"),
   },
   {
     id: 3,
     title: "QUESO DAISY",
     description: "Pastel pimiento, queso daisy y aderezo de la casa",
     price: "$34",
-    image: "/adoraditas/queso-daisy.png",
+    image: getImageUrl("/adoraditas/queso-daisy.png"),
   },
   {
     id: 4,
     title: "PIZZA",
     description: "Salami, queso manchego y aderezo italiano",
     price: "$34",
-    image: "/adoraditas/pizza.png",
+    image: getImageUrl("/adoraditas/pizza.png"),
   },
   {
     id: 5,
@@ -177,7 +180,7 @@ export const adoraditas = [
     description:
       "Jamón pechuga de pavo, salami, queso manchego y aderezo italiano",
     price: "$48",
-    image: "/adoraditas/italiana.png",
+    image: getImageUrl("/adoraditas/italiana.png"),
   },
   {
     id: 6,
@@ -185,7 +188,7 @@ export const adoraditas = [
     description:
       "Jamón pechuga de pavo, queso manchego o daisy, salami y aderezo de la casa",
     price: "$48",
-    image: "/adoraditas/especial.png",
+    image: getImageUrl("/adoraditas/especial.png"),
   },
   {
     id: 7,
@@ -193,7 +196,7 @@ export const adoraditas = [
     description:
       "Jamón pechuga de pavo, auténtico queso de bola y aderezo de la casa",
     price: "$55",
-    image: "/adoraditas/queso-bola.png",
+    image: getImageUrl("/adoraditas/queso-bola.png"),
   },
   {
     id: 8,
@@ -201,7 +204,7 @@ export const adoraditas = [
     description:
       "Carne asada, aderezo de la casa, frijol, cebolla asada, pico de gallo y salsita roja",
     price: "$50",
-    image: "/adoraditas/carne-asada.png",
+    image: getImageUrl("/adoraditas/carne-asada.png"),
   },
   {
     id: 9,
@@ -209,7 +212,7 @@ export const adoraditas = [
     description:
       "Pechuga de pollo empanizada, aderezo de la casa, frijol, pico de gallo y salsita roja",
     price: "$50",
-    image: "/adoraditas/pechuga-empanizada.png",
+    image: getImageUrl("/adoraditas/pechuga-empanizada.png"),
   },
   {
     id: 10,
@@ -217,7 +220,7 @@ export const adoraditas = [
     description:
       "Pechuga de pollo empanizada rellena de jamón y queso philadelphia, aderezo de la casa y pico de gallo",
     price: "$64",
-    image: "/adoraditas/parmesana.png",
+    image: getImageUrl("/adoraditas/parmesana.png"),
   },
   {
     id: 11,
@@ -225,7 +228,7 @@ export const adoraditas = [
     description:
       "Pierna, jamón pechuga de pavo, queso daisy, aderezo de la casa, cebolla asada y tomate",
     price: "$99",
-    image: "/adoraditas/pierna.png",
+    image: getImageUrl("/adoraditas/pierna.png"),
   },
   {
     id: 12,
@@ -233,7 +236,7 @@ export const adoraditas = [
     description:
       "Jamón pechuga de pavo, salami, pastel pimiento, asado o empanizado, queso manchego, aderezo de la casa, cebolla asada, pico de gallo, salsa roja y frijol colado",
     price: "$72",
-    image: "/adoraditas/super-especial.png",
+    image: getImageUrl("/adoraditas/super-especial.png"),
   },
   {
     id: 13,
@@ -241,7 +244,7 @@ export const adoraditas = [
     description:
       "Queso de bola, queso daisy, queso manchego y aderezo de la casa",
     price: "$55",
-    image: "/adoraditas/tres-quesos.png",
+    image: getImageUrl("/adoraditas/tres-quesos.png"),
   },
   {
     id: 14,
@@ -249,7 +252,7 @@ export const adoraditas = [
     description:
       "Pastel pimiento, queso manchego, aderezo de la casa y salchicha asadera",
     price: "$40",
-    image: "/adoraditas/salchicha-asadera.png",
+    image: getImageUrl("/adoraditas/salchicha-asadera.png"),
   },
   {
     id: 15,
@@ -257,7 +260,7 @@ export const adoraditas = [
     description:
       "Huevos revueltos con longaniza, frijol colado y extra queso de bola",
     price: "$??",
-    image: "/adoraditas/huevo-longaniza-bola.png",
+    image: getImageUrl("/adoraditas/huevo-longaniza-bola.png"),
   },
 ];
 
@@ -275,26 +278,45 @@ export const locations = [
 ];
 
 export const navLinks = [
-  { label: "Aviso De Privacidad", url: "/privacidad" },
-  { label: "Preguntas Frecuentes", url: "/faq" },
-  { label: "Restaurantes", url: "/restaurantes" },
-  { label: "Contacto", url: "/contacto" },
+  {
+    label: "Aviso De Privacidad",
+    url: `${import.meta.env.BASE_URL}privacidad`,
+  },
+  { label: "Preguntas Frecuentes", url: `${import.meta.env.BASE_URL}faq` },
+  { label: "Restaurantes", url: `${import.meta.env.BASE_URL}restaurntes` },
+  { label: "Contacto", url: `${import.meta.env.BASE_URL}contacto` },
 ];
 
 export const socialLinks = [
-  { name: "X", url: "https://x.com", icon: "/logos/x.svg" },
+  { name: "X", url: "https://x.com", icon: getImageUrl("/logos/x.svg") },
   {
     name: "Facebook",
     url: "https://facebook.com",
-    icon: "/logos/facebook.svg",
+    icon: getImageUrl("/logos/facebook.svg"),
   },
-  { name: "TikTok", url: "https://tiktok.com", icon: "/logos/tiktok.svg" },
+  {
+    name: "TikTok",
+    url: "https://tiktok.com",
+    icon: getImageUrl("/logos/tiktok.svg"),
+  },
 ];
 
 export const deliveryApps = [
-  { name: "Rappi", url: "https://rappi.com", icon: "/logos/rappi.svg" },
-  { name: "Uber Eats", url: "https://ubereats.com", icon: "/logos/uber.svg" },
-  { name: "Didi Food", url: "https://didi.com", icon: "/logos/didi.svg" },
+  {
+    name: "Rappi",
+    url: "https://rappi.com",
+    icon: getImageUrl("/logos/rappi.svg"),
+  },
+  {
+    name: "Uber Eats",
+    url: "https://ubereats.com",
+    icon: getImageUrl("/logos/uber.svg"),
+  },
+  {
+    name: "Didi Food",
+    url: "https://didi.com",
+    icon: getImageUrl("/logos/didi.svg"),
+  },
 ];
 
 export const combos = [
@@ -303,42 +325,42 @@ export const combos = [
     title: "COMBO LUNCH",
     description: "Dos adoraditas clásicas + agua fresca",
     price: "$74",
-    image: "/combos/lunch.png",
+    image: getImageUrl("/combos/lunch.png"),
   },
   {
     id: 2,
     title: "COMBO LONGANIZA, PIZZA O DAISY",
     description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
     price: "$87",
-    image: "/combos/longaniza-pizza-daisy.png",
+    image: getImageUrl("/combos/longaniza-pizza-daisy.png"),
   },
   {
     id: 3,
     title: "COMBO 3 QUESOS O QUESO DE BOLA",
     description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
     price: "$126",
-    image: "/combos/3quesos-bola.png",
+    image: getImageUrl("/combos/3quesos-bola.png"),
   },
   {
     id: 4,
     title: "COMBO ITALIANA O ESPECIAL",
     description: "Dos adoraditas + agua fresca",
     price: "$114",
-    image: "/combos/italiana-especial.png",
+    image: getImageUrl("/combos/italiana-especial.png"),
   },
   {
     id: 5,
     title: "COMBO ASADO Y EMPANIZADO",
     description: "Dos adoraditas (pueden ser combinadas) + agua fresca",
     price: "$117",
-    image: "/combos/asado-empanizado.png",
+    image: getImageUrl("/combos/asado-empanizado.png"),
   },
   {
     id: 6,
     title: "COMBO SÚPER",
     description: "Dos adoraditas súper (asado o empanizado) + agua fresca",
     price: "$159",
-    image: "/combos/super.png",
+    image: getImageUrl("/combos/super.png"),
   },
   {
     id: 7,
@@ -346,69 +368,69 @@ export const combos = [
     description:
       "Dos adoraditas de pechuga parmesana con philadelphia + agua fresca",
     price: "$144",
-    image: "/combos/parmesano.png",
+    image: getImageUrl("/combos/parmesano.png"),
   },
   {
     id: 8,
     title: "COMBO ITALIANO O ESPECIAL COMPLETO",
     description: "Agua + 1 galleta + papas",
     price: "$105",
-    image: "/combos/italiano-especial-completo.png",
+    image: getImageUrl("/combos/italiano-especial-completo.png"),
   },
   {
     id: 9,
     title: "COMBO PIERNA COMPLETO",
     description: "Agua + galletas + papas",
     price: "$156",
-    image: "/combos/pierna-completo.png",
+    image: getImageUrl("/combos/pierna-completo.png"),
   },
   {
     id: 10,
     title: "COMBO CLÁSICA COMPLETO",
     description: "Agua + galletas + papas",
     price: "$83",
-    image: "/combos/clasica-completo.png",
+    image: getImageUrl("/combos/clasica-completo.png"),
   },
   {
     id: 11,
     title: "COMBO ASADO O EMPANIZADO COMPLETO",
     description: "Agua + galletas + papas",
     price: "$107",
-    image: "/combos/asado-empanizado-completo.png",
+    image: getImageUrl("/combos/asado-empanizado-completo.png"),
   },
   {
     id: 12,
     title: "COMBO PIZZA/DAISY/HUEVO COMPLETO",
     description: "Agua + galletas + papas",
     price: "$91",
-    image: "/combos/pizza-daisy-huevo-completo.png",
+    image: getImageUrl("/combos/pizza-daisy-huevo-completo.png"),
   },
   {
     id: 13,
     title: "COMBO PARMIGIANA COMPLETO",
     description: "Agua + galletas + papas",
     price: "$121",
-    image: "/combos/parmigiana-completo.png",
+    image: getImageUrl("/combos/parmigiana-completo.png"),
   },
   {
     id: 14,
     title: "COMBO SÚPER COMPLETO",
     description: "Agua + galletas + papas",
     price: "$129",
-    image: "/combos/super-completo.png",
+    image: getImageUrl("/combos/super-completo.png"),
   },
   {
     id: 15,
     title: "COMBO QUESO BOLA/3 QUESOS COMPLETO",
     description: "Agua + galletas + papas",
     price: "$112",
-    image: "/combos/queso-bola-3quesos-completo.png",
+    image: getImageUrl("/combos/queso-bola-3quesos-completo.png"),
   },
   {
     id: 16,
     title: "COMBO 2 PIERNA COMPLETO",
     description: "2 adoraditas + agua fresca",
     price: "$211",
-    image: "/combos/2pierna-completo.png",
+    image: getImageUrl("/combos/2pierna-completo.png"),
   },
 ];
