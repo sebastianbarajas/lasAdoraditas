@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  /* @font-face {
+      font-family: 'HankenGrotesk';
+      src: url('/fonts/HankenGrotesk-Regular.ttf') format('truetype');
+      font-display: swap;
+      font-weight: normal;
+      font-style: normal;
+    } */
+  @font-face {
+      font-family: 'WidyBold';
+      src: url('/fonts/Widy-Bold.otf') format('truetype');
+      font-display: swap;
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'WidyThin';
+      src: url('/fonts/Widy-Thin.otf') format('truetype');
+      font-display: swap;
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'HankenGrotesk';
+      src: url('/fonts/HankenGrotesk-Regular.ttf') format('truetype');
+      font-display: swap;
+      font-weight: normal;
+      font-style: normal;
+    }
+  @font-face {
+      font-family: 'HankenGroteskBold';
+      src: url('/fonts/HankenGrotesk-ExtraBold.ttf') format('truetype');
+      font-display: swap;
+      font-weight: normal;
+      font-style: normal;
+    }
+}
+

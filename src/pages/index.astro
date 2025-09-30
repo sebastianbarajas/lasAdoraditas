@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Carrousel from "../components/Carrousel.tsx";
+import HeaderMenuFood from "../components/HeaderMenuFood.tsx";
+import GalleryHome from "../components/GalleryHome.tsx";
+import Sucursales from "../components/Sucursales.tsx";
+import { images, imgGalleryHome, itemsMenuFood, sucursales } from "../data";
+import MenuPageHome from "@/components/MenuPageHome.tsx";
+---
+
+<Layout title="Las Adoraditas">
+  <main>
+    <MenuPageHome client:load />
+    <Carrousel client:load images={images} />
+    <HeaderMenuFood items={itemsMenuFood} />
+    <GalleryHome images={imgGalleryHome} />
+    <Sucursales sucursales={sucursales} />
+  </main>
+</Layout>

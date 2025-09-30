@@ -1,0 +1,11 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import MenuPage from "@/components/MenuPage";
+import { combos } from "@/data";
+---
+
+<Layout title="Las Adoraditas">
+  <MenuPage itemsMenu={combos} client:load />
+</Layout>
+
+---
