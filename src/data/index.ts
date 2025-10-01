@@ -31,7 +31,7 @@ export const imgGalleryHome = [
 export const sucursales = [
   {
     id: 1,
-    title: "CENTRO 2",
+    title: "CENTRO 1",
     address: "C. 56 x 63 y 61. Col. Centro",
     phones: ["(999) 221 2705", "(999) 923 2282"],
     schedule: [
