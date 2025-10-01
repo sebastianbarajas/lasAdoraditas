@@ -23,7 +23,7 @@ const Menu = ({
     <header className="w-full bg-yellow-400">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6 py-6 gap-3">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0">
+        <a href={import.meta.env.BASE_URL} className="flex-shrink-0">
           <img src={logo} alt="Logo" className="w-40 lg:w-56 mx-auto md:mx-0" />
         </a>
 
